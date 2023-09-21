@@ -35,6 +35,10 @@
             this.cadastroDeAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeProfessorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosDeAlunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeProfessoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeCursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +50,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opçõesToolStripMenuItem});
+            this.opçõesToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(3, 64);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(794, 24);
@@ -84,6 +89,37 @@
             this.cadastroCursoToolStripMenuItem.Text = "Cadastro Curso";
             this.cadastroCursoToolStripMenuItem.Click += new System.EventHandler(this.cadastroCursoToolStripMenuItem_Click);
             // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relatóriosDeAlunosToolStripMenuItem,
+            this.relatórioDeProfessoresToolStripMenuItem,
+            this.relatórioDeCursosToolStripMenuItem});
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // relatóriosDeAlunosToolStripMenuItem
+            // 
+            this.relatóriosDeAlunosToolStripMenuItem.Name = "relatóriosDeAlunosToolStripMenuItem";
+            this.relatóriosDeAlunosToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.relatóriosDeAlunosToolStripMenuItem.Text = "Relatórios de Alunos";
+            this.relatóriosDeAlunosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosDeAlunosToolStripMenuItem_Click);
+            // 
+            // relatórioDeProfessoresToolStripMenuItem
+            // 
+            this.relatórioDeProfessoresToolStripMenuItem.Name = "relatórioDeProfessoresToolStripMenuItem";
+            this.relatórioDeProfessoresToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.relatórioDeProfessoresToolStripMenuItem.Text = "Relatório de Professores";
+            this.relatórioDeProfessoresToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeProfessoresToolStripMenuItem_Click);
+            // 
+            // relatórioDeCursosToolStripMenuItem
+            // 
+            this.relatórioDeCursosToolStripMenuItem.Name = "relatórioDeCursosToolStripMenuItem";
+            this.relatórioDeCursosToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.relatórioDeCursosToolStripMenuItem.Text = "Relatório de Cursos";
+            this.relatórioDeCursosToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeCursosToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -113,5 +149,9 @@
         private ToolStripMenuItem cadastroDeAlunoToolStripMenuItem;
         private ToolStripMenuItem cadastroDeProfessorToolStripMenuItem;
         private ToolStripMenuItem cadastroCursoToolStripMenuItem;
+        private ToolStripMenuItem relatóriosToolStripMenuItem;
+        private ToolStripMenuItem relatóriosDeAlunosToolStripMenuItem;
+        private ToolStripMenuItem relatórioDeProfessoresToolStripMenuItem;
+        private ToolStripMenuItem relatórioDeCursosToolStripMenuItem;
     }
 }
